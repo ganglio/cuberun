@@ -1,0 +1,69 @@
+$boxSize: 100px;
+$boxColor: #0080FF;
+$boxJumpHeight: 300px;
+$groundSize: 100px;
+$groundColor: #FF892D;
+$skyColor: #B3FFFD;
+$jumpTime: 0.5s;
+$scrollTime: 0.4s;
+
+body {
+	@include background-image(linear-gradient(top,$skyColor,white))
+	}
+
+.box {
+	width: $boxSize;
+	height: $boxSize;
+	border: 1px solid $boxColor;
+	position: absolute;
+	bottom: $groundSize;
+	left: 50%;
+	margin-left: -$boxSize/2;
+	@include border-radius(10px);
+	@include box-shadow(0 0 $boxSize/2 $boxColor inset);
+	&.jump {
+		@include animation(jump $jumpTime);
+	}
+}
+
+.horizon {
+	position: absolute;
+	width: 100%;
+	height: $groundSize;
+	bottom: 0;
+	@include background-image(
+		linear-gradient(-45deg,transparent 25%,rgba(255,255,255,0.2) 25%,rgba(255,255,255,0.2) 50%,transparent 50%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),
+		linear-gradient(top, $groundColor, transparent)
+	);
+	@include background-size(50px 50px, $groundSize $groundSize);
+	@include animation(scroll $scrollTime infinite linear);
+}
+
+@include keyframes(scroll) {
+	0% {background-position:0 0;}
+	100% {background-position:-50px -50px;}
+}
+
+@include keyframes(jump) {
+	0% {
+		bottom: $groundSize;
+		@include transform(rotate(0deg));
+	}
+	50% {
+		bottom: $groundSize+$boxJumpHeight;
+		@include transform(rotate(45deg));
+	}
+	100% {
+		bottom: $groundSize;
+		@include transform(rotate(90deg));
+	}
+}
+
+// UI
+#jump {
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 200px;
+	height: 50px;
+}
