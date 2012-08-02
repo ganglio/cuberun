@@ -63,21 +63,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 16, ../sass/_world.scss */
+/* line 19, ../sass/_world.scss */
 html {
   height: 100%;
 }
 
-/* line 20, ../sass/_world.scss */
+/* line 23, ../sass/_world.scss */
 body {
   height: 100%;
   overflow: hidden;
+  background-size: 100% 400%;
+  background-position-y: 0%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #81a9ff), color-stop(50%, #0000ff), color-stop(100%, #81a9ff));
+  background-image: -webkit-linear-gradient(top, #81a9ff, #0000ff, #81a9ff);
+  background-image: -moz-linear-gradient(top, #81a9ff, #0000ff, #81a9ff);
+  background-image: -o-linear-gradient(top, #81a9ff, #0000ff, #81a9ff);
+  background-image: linear-gradient(top, #81a9ff, #0000ff, #81a9ff);
+  -webkit-animation: daynight 60s infinine linear;
+  -moz-animation: daynight 60s infinine linear;
+  -ms-animation: daynight 60s infinine linear;
+  -o-animation: daynight 60s infinine linear;
+  animation: daynight 60s infinine linear;
 }
 
-/* line 25, ../sass/_world.scss */
+/* line 32, ../sass/_world.scss */
 .clouds {
   position: absolute;
   background-color: white;
+  z-index: 2;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -87,7 +100,7 @@ body {
   -moz-box-shadow: 0 0 30px gray inset, 3px 3px 3px gray;
   box-shadow: 0 0 30px gray inset, 3px 3px 3px gray;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-1 {
   -webkit-animation: clouds 8.5s infinite linear;
   -moz-animation: clouds 8.5s infinite linear;
@@ -95,7 +108,7 @@ body {
   -o-animation: clouds 8.5s infinite linear;
   animation: clouds 8.5s infinite linear;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-2 {
   -webkit-animation: clouds 9s infinite linear;
   -moz-animation: clouds 9s infinite linear;
@@ -103,7 +116,7 @@ body {
   -o-animation: clouds 9s infinite linear;
   animation: clouds 9s infinite linear;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-3 {
   -webkit-animation: clouds 9.5s infinite linear;
   -moz-animation: clouds 9.5s infinite linear;
@@ -111,7 +124,7 @@ body {
   -o-animation: clouds 9.5s infinite linear;
   animation: clouds 9.5s infinite linear;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-4 {
   -webkit-animation: clouds 10s infinite linear;
   -moz-animation: clouds 10s infinite linear;
@@ -119,7 +132,7 @@ body {
   -o-animation: clouds 10s infinite linear;
   animation: clouds 10s infinite linear;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-5 {
   -webkit-animation: clouds 10.5s infinite linear;
   -moz-animation: clouds 10.5s infinite linear;
@@ -127,7 +140,7 @@ body {
   -o-animation: clouds 10.5s infinite linear;
   animation: clouds 10.5s infinite linear;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-6 {
   -webkit-animation: clouds 11s infinite linear;
   -moz-animation: clouds 11s infinite linear;
@@ -135,7 +148,7 @@ body {
   -o-animation: clouds 11s infinite linear;
   animation: clouds 11s infinite linear;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-7 {
   -webkit-animation: clouds 11.5s infinite linear;
   -moz-animation: clouds 11.5s infinite linear;
@@ -143,7 +156,7 @@ body {
   -o-animation: clouds 11.5s infinite linear;
   animation: clouds 11.5s infinite linear;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-8 {
   -webkit-animation: clouds 12s infinite linear;
   -moz-animation: clouds 12s infinite linear;
@@ -151,7 +164,7 @@ body {
   -o-animation: clouds 12s infinite linear;
   animation: clouds 12s infinite linear;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-9 {
   -webkit-animation: clouds 12.5s infinite linear;
   -moz-animation: clouds 12.5s infinite linear;
@@ -159,7 +172,7 @@ body {
   -o-animation: clouds 12.5s infinite linear;
   animation: clouds 12.5s infinite linear;
 }
-/* line 31, ../sass/_world.scss */
+/* line 39, ../sass/_world.scss */
 .clouds.cloud-10 {
   -webkit-animation: clouds 13s infinite linear;
   -moz-animation: clouds 13s infinite linear;
@@ -168,7 +181,7 @@ body {
   animation: clouds 13s infinite linear;
 }
 
-/* line 37, ../sass/_world.scss */
+/* line 45, ../sass/_world.scss */
 .skysphere {
   position: relative;
   width: 100%;
@@ -178,42 +191,40 @@ body {
   -ms-animation: skysphere 60s infinite linear;
   -o-animation: skysphere 60s infinite linear;
   animation: skysphere 60s infinite linear;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #81a9ff), color-stop(100%, #0000ff));
-  background-image: -webkit-linear-gradient(top, #81a9ff, #0000ff);
-  background-image: -moz-linear-gradient(top, #81a9ff, #0000ff);
-  background-image: -o-linear-gradient(top, #81a9ff, #0000ff);
-  background-image: linear-gradient(top, #81a9ff, #0000ff);
 }
-/* line 44, ../sass/_world.scss */
+/* line 50, ../sass/_world.scss */
 .skysphere .skyelement {
   position: absolute;
-  width: 200px;
-  height: 200px;
   left: 50%;
-  margin-left: -100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
   border-radius: 100px;
 }
-/* line 51, ../sass/_world.scss */
+/* line 54, ../sass/_world.scss */
 .skysphere .skyelement.sun {
-  top: 0;
+  top: 10px;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
   background-color: yellow;
+  -webkit-box-shadow: 0 0 40px #ff9a00 inset;
+  -moz-box-shadow: 0 0 40px #ff9a00 inset;
+  box-shadow: 0 0 40px #ff9a00 inset;
 }
-/* line 55, ../sass/_world.scss */
+/* line 62, ../sass/_world.scss */
 .skysphere .skyelement.moon {
-  background-color: green;
-  bottom: 0;
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  bottom: 30px;
+  -webkit-box-shadow: -30px 0px 10px 10px white inset;
+  -moz-box-shadow: -30px 0px 10px 10px white inset;
+  box-shadow: -30px 0px 10px 10px white inset;
 }
 
-/* line 62, ../sass/_world.scss */
+/* line 73, ../sass/_world.scss */
 .box {
   width: 100px;
   height: 100px;
@@ -223,6 +234,7 @@ body {
   left: 50%;
   margin-left: -50px;
   background-color: white;
+  z-index: 10;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -232,7 +244,7 @@ body {
   -moz-box-shadow: 0 0 50px #0080ff inset;
   box-shadow: 0 0 50px #0080ff inset;
 }
-/* line 73, ../sass/_world.scss */
+/* line 85, ../sass/_world.scss */
 .box.jump {
   -webkit-animation: jump 0.5s;
   -moz-animation: jump 0.5s;
@@ -241,7 +253,7 @@ body {
   animation: jump 0.5s;
 }
 
-/* line 78, ../sass/_world.scss */
+/* line 90, ../sass/_world.scss */
 .horizon {
   position: absolute;
   width: 100%;
@@ -391,82 +403,142 @@ body {
   }
 }
 
-@-moz-keyframes scroll {
+@-moz-keyframes daynight {
   /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position-y: 0%;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position-y: 400%;
+  }
+}
+
+@-webkit-keyframes daynight {
+  /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position-y: 0%;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position-y: 400%;
+  }
+}
+
+@-o-keyframes daynight {
+  /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position-y: 0%;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position-y: 400%;
+  }
+}
+
+@-ms-keyframes daynight {
+  /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position-y: 0%;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position-y: 400%;
+  }
+}
+
+@keyframes daynight {
+  /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position-y: 0%;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position-y: 400%;
+  }
+}
+
+@-moz-keyframes scroll {
+  /* line 18, ../sass/_animations.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/_animations.scss */
+  /* line 19, ../sass/_animations.scss */
   100% {
     background-position: -50px -50px;
   }
 }
 
 @-webkit-keyframes scroll {
-  /* line 12, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/_animations.scss */
+  /* line 19, ../sass/_animations.scss */
   100% {
     background-position: -50px -50px;
   }
 }
 
 @-o-keyframes scroll {
-  /* line 12, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/_animations.scss */
+  /* line 19, ../sass/_animations.scss */
   100% {
     background-position: -50px -50px;
   }
 }
 
 @-ms-keyframes scroll {
-  /* line 12, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/_animations.scss */
+  /* line 19, ../sass/_animations.scss */
   100% {
     background-position: -50px -50px;
   }
 }
 
 @keyframes scroll {
-  /* line 12, ../sass/_animations.scss */
+  /* line 18, ../sass/_animations.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 13, ../sass/_animations.scss */
+  /* line 19, ../sass/_animations.scss */
   100% {
     background-position: -50px -50px;
   }
 }
 
 @-moz-keyframes jump {
-  /* line 17, ../sass/_animations.scss */
+  /* line 23, ../sass/_animations.scss */
   0% {
     bottom: 100px;
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  /* line 21, ../sass/_animations.scss */
+  /* line 27, ../sass/_animations.scss */
   50% {
     bottom: 400px;
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  /* line 25, ../sass/_animations.scss */
+  /* line 31, ../sass/_animations.scss */
   100% {
     bottom: 100px;
     -moz-transform: rotate(90deg);
@@ -475,21 +547,21 @@ body {
 }
 
 @-webkit-keyframes jump {
-  /* line 17, ../sass/_animations.scss */
+  /* line 23, ../sass/_animations.scss */
   0% {
     bottom: 100px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  /* line 21, ../sass/_animations.scss */
+  /* line 27, ../sass/_animations.scss */
   50% {
     bottom: 400px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  /* line 25, ../sass/_animations.scss */
+  /* line 31, ../sass/_animations.scss */
   100% {
     bottom: 100px;
     -webkit-transform: rotate(90deg);
@@ -498,21 +570,21 @@ body {
 }
 
 @-o-keyframes jump {
-  /* line 17, ../sass/_animations.scss */
+  /* line 23, ../sass/_animations.scss */
   0% {
     bottom: 100px;
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  /* line 21, ../sass/_animations.scss */
+  /* line 27, ../sass/_animations.scss */
   50% {
     bottom: 400px;
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  /* line 25, ../sass/_animations.scss */
+  /* line 31, ../sass/_animations.scss */
   100% {
     bottom: 100px;
     -o-transform: rotate(90deg);
@@ -521,21 +593,21 @@ body {
 }
 
 @-ms-keyframes jump {
-  /* line 17, ../sass/_animations.scss */
+  /* line 23, ../sass/_animations.scss */
   0% {
     bottom: 100px;
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  /* line 21, ../sass/_animations.scss */
+  /* line 27, ../sass/_animations.scss */
   50% {
     bottom: 400px;
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  /* line 25, ../sass/_animations.scss */
+  /* line 31, ../sass/_animations.scss */
   100% {
     bottom: 100px;
     -ms-transform: rotate(90deg);
@@ -544,19 +616,19 @@ body {
 }
 
 @keyframes jump {
-  /* line 17, ../sass/_animations.scss */
+  /* line 23, ../sass/_animations.scss */
   0% {
     bottom: 100px;
     transform: rotate(0deg);
   }
 
-  /* line 21, ../sass/_animations.scss */
+  /* line 27, ../sass/_animations.scss */
   50% {
     bottom: 400px;
     transform: rotate(45deg);
   }
 
-  /* line 25, ../sass/_animations.scss */
+  /* line 31, ../sass/_animations.scss */
   100% {
     bottom: 100px;
     transform: rotate(90deg);

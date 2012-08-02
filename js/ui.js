@@ -8,7 +8,7 @@ $(document).ready(function(){
 	var minCloudTop = 20;
 	var maxCloudTop = 400;
 
-	for (var i=0; i<maxClouds; i++) {
+	/*for (var i=0; i<maxClouds; i++) {
 		var $cloud = $("<div />");
 		$cloud.addClass("clouds cloud-"+Math.round(Math.random()*9+1));
 		$cloud.css({
@@ -17,7 +17,7 @@ $(document).ready(function(){
 			top:Math.round(Math.random()*(maxCloudTop-minCloudTop)+minCloudTop),
 		});
 		$("body").append($cloud);
-	}
+	}//*/
 
 	var jump = function(){
 		$(".box").addClass("jump");
