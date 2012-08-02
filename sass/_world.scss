@@ -3,7 +3,8 @@ $boxColor: #0080FF;
 $boxJumpHeight: 300px;
 $groundSize: 100px;
 $groundColor: #FF892D;
-$skyColor: #81A9FF;
+$daySkyColor: #81A9FF;
+$nightSkyColor: blue;
 $jumpTime: 0.5s;
 $scrollTime: 0.4s;
 $cloudColor: #808080;
@@ -17,10 +18,8 @@ html {
 }
 
 body {
-	@include background-image(linear-gradient(top,$skyColor,white));
 	height: 100%;
 	overflow: hidden;
-	@include animation(daynight $daytime infinite linear);
 }
 
 .clouds {
@@ -41,6 +40,7 @@ body {
 	height: 200%;
 	@include animation(skysphere $dayTime infinite linear);
 	@include transform(rotate(0deg));
+	@include background-image(linear-gradient(top,$daySkyColor,$nightSkyColor));
 	.skyelement {
 		position: absolute;
 		width: 200px;
@@ -67,6 +67,7 @@ body {
 	bottom: $groundSize;
 	left: 50%;
 	margin-left: -$boxSize/2;
+	background-color: white;
 	@include border-radius(10px);
 	@include box-shadow(0 0 $boxSize/2 $boxColor inset);
 	&.jump {

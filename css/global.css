@@ -1,93 +1,564 @@
-/*
-Syntax error: Undefined variable: "$daytime".
-        on line 23 of /home/ganglio/www/jumper/sass/_world.scss, in `animation'
-        from line 23 of /home/ganglio/www/jumper/sass/_world.scss
-        from line 4 of /home/ganglio/www/jumper/sass/global.scss
+/* line 17, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/home/ganglio/www/jumper/sass/_world.scss:23:in `animation'
-/home/ganglio/www/jumper/sass/_world.scss:23
-/home/ganglio/www/jumper/sass/global.scss:4
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/script/variable.rb:49:in `_perform'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/script/node.rb:40:in `perform'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/script/list.rb:70:in `block in _perform'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/script/list.rb:70:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/script/list.rb:70:in `_perform'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/script/node.rb:40:in `perform'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:196:in `block in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:192:in `each'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:192:in `inject'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:192:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:20:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:29:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:41:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:28:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:260:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:20:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:146:in `block in visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:146:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:146:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:20:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:29:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:41:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:28:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:48:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:20:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/engine.rb:309:in `_render'
-/var/lib/gems/1.9.1/gems/sass-3.2.0.alpha.277/lib/sass/engine.rb:256:in `render'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:19:in `load'
-/usr/local/bin/compass:19:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$daytime\".\A         on line 23 of /home/ganglio/www/jumper/sass/_world.scss, in `animation'\A         from line 23 of /home/ganglio/www/jumper/sass/_world.scss\A         from line 4 of /home/ganglio/www/jumper/sass/global.scss"; }
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, ../sass/_world.scss */
+html {
+  height: 100%;
+}
+
+/* line 20, ../sass/_world.scss */
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 25, ../sass/_world.scss */
+.clouds {
+  position: absolute;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 30px gray inset, 3px 3px 3px gray;
+  -moz-box-shadow: 0 0 30px gray inset, 3px 3px 3px gray;
+  box-shadow: 0 0 30px gray inset, 3px 3px 3px gray;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-1 {
+  -webkit-animation: clouds 8.5s infinite linear;
+  -moz-animation: clouds 8.5s infinite linear;
+  -ms-animation: clouds 8.5s infinite linear;
+  -o-animation: clouds 8.5s infinite linear;
+  animation: clouds 8.5s infinite linear;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-2 {
+  -webkit-animation: clouds 9s infinite linear;
+  -moz-animation: clouds 9s infinite linear;
+  -ms-animation: clouds 9s infinite linear;
+  -o-animation: clouds 9s infinite linear;
+  animation: clouds 9s infinite linear;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-3 {
+  -webkit-animation: clouds 9.5s infinite linear;
+  -moz-animation: clouds 9.5s infinite linear;
+  -ms-animation: clouds 9.5s infinite linear;
+  -o-animation: clouds 9.5s infinite linear;
+  animation: clouds 9.5s infinite linear;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-4 {
+  -webkit-animation: clouds 10s infinite linear;
+  -moz-animation: clouds 10s infinite linear;
+  -ms-animation: clouds 10s infinite linear;
+  -o-animation: clouds 10s infinite linear;
+  animation: clouds 10s infinite linear;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-5 {
+  -webkit-animation: clouds 10.5s infinite linear;
+  -moz-animation: clouds 10.5s infinite linear;
+  -ms-animation: clouds 10.5s infinite linear;
+  -o-animation: clouds 10.5s infinite linear;
+  animation: clouds 10.5s infinite linear;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-6 {
+  -webkit-animation: clouds 11s infinite linear;
+  -moz-animation: clouds 11s infinite linear;
+  -ms-animation: clouds 11s infinite linear;
+  -o-animation: clouds 11s infinite linear;
+  animation: clouds 11s infinite linear;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-7 {
+  -webkit-animation: clouds 11.5s infinite linear;
+  -moz-animation: clouds 11.5s infinite linear;
+  -ms-animation: clouds 11.5s infinite linear;
+  -o-animation: clouds 11.5s infinite linear;
+  animation: clouds 11.5s infinite linear;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-8 {
+  -webkit-animation: clouds 12s infinite linear;
+  -moz-animation: clouds 12s infinite linear;
+  -ms-animation: clouds 12s infinite linear;
+  -o-animation: clouds 12s infinite linear;
+  animation: clouds 12s infinite linear;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-9 {
+  -webkit-animation: clouds 12.5s infinite linear;
+  -moz-animation: clouds 12.5s infinite linear;
+  -ms-animation: clouds 12.5s infinite linear;
+  -o-animation: clouds 12.5s infinite linear;
+  animation: clouds 12.5s infinite linear;
+}
+/* line 31, ../sass/_world.scss */
+.clouds.cloud-10 {
+  -webkit-animation: clouds 13s infinite linear;
+  -moz-animation: clouds 13s infinite linear;
+  -ms-animation: clouds 13s infinite linear;
+  -o-animation: clouds 13s infinite linear;
+  animation: clouds 13s infinite linear;
+}
+
+/* line 37, ../sass/_world.scss */
+.skysphere {
+  position: relative;
+  width: 100%;
+  height: 200%;
+  -webkit-animation: skysphere 60s infinite linear;
+  -moz-animation: skysphere 60s infinite linear;
+  -ms-animation: skysphere 60s infinite linear;
+  -o-animation: skysphere 60s infinite linear;
+  animation: skysphere 60s infinite linear;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #81a9ff), color-stop(100%, #0000ff));
+  background-image: -webkit-linear-gradient(top, #81a9ff, #0000ff);
+  background-image: -moz-linear-gradient(top, #81a9ff, #0000ff);
+  background-image: -o-linear-gradient(top, #81a9ff, #0000ff);
+  background-image: linear-gradient(top, #81a9ff, #0000ff);
+}
+/* line 44, ../sass/_world.scss */
+.skysphere .skyelement {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  margin-left: -100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+/* line 51, ../sass/_world.scss */
+.skysphere .skyelement.sun {
+  top: 0;
+  background-color: yellow;
+}
+/* line 55, ../sass/_world.scss */
+.skysphere .skyelement.moon {
+  background-color: green;
+  bottom: 0;
+}
+
+/* line 62, ../sass/_world.scss */
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #0080ff;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 50px #0080ff inset;
+  -moz-box-shadow: 0 0 50px #0080ff inset;
+  box-shadow: 0 0 50px #0080ff inset;
+}
+/* line 73, ../sass/_world.scss */
+.box.jump {
+  -webkit-animation: jump 0.5s;
+  -moz-animation: jump 0.5s;
+  -ms-animation: jump 0.5s;
+  -o-animation: jump 0.5s;
+  animation: jump 0.5s;
+}
+
+/* line 78, ../sass/_world.scss */
+.horizon {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff892d), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)), -webkit-linear-gradient(top, #ff892d, #ffffff);
+  background-image: -moz-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)), -moz-linear-gradient(top, #ff892d, #ffffff);
+  background-image: -o-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)), -o-linear-gradient(top, #ff892d, #ffffff);
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2)), linear-gradient(top, #ff892d, #ffffff);
+  -webkit-background-size: 50px 50px, 100px 100px;
+  -moz-background-size: 50px 50px, 100px 100px;
+  -o-background-size: 50px 50px, 100px 100px;
+  background-size: 50px 50px, 100px 100px;
+  -webkit-animation: scroll 0.4s infinite linear;
+  -moz-animation: scroll 0.4s infinite linear;
+  -ms-animation: scroll 0.4s infinite linear;
+  -o-animation: scroll 0.4s infinite linear;
+  animation: scroll 0.4s infinite linear;
+}
+
+@-moz-keyframes clouds {
+  /* line 2, ../sass/_animations.scss */
+  0% {
+    right: -10%;
+  }
+
+  /* line 3, ../sass/_animations.scss */
+  100% {
+    right: 100%;
+  }
+}
+
+@-webkit-keyframes clouds {
+  /* line 2, ../sass/_animations.scss */
+  0% {
+    right: -10%;
+  }
+
+  /* line 3, ../sass/_animations.scss */
+  100% {
+    right: 100%;
+  }
+}
+
+@-o-keyframes clouds {
+  /* line 2, ../sass/_animations.scss */
+  0% {
+    right: -10%;
+  }
+
+  /* line 3, ../sass/_animations.scss */
+  100% {
+    right: 100%;
+  }
+}
+
+@-ms-keyframes clouds {
+  /* line 2, ../sass/_animations.scss */
+  0% {
+    right: -10%;
+  }
+
+  /* line 3, ../sass/_animations.scss */
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes clouds {
+  /* line 2, ../sass/_animations.scss */
+  0% {
+    right: -10%;
+  }
+
+  /* line 3, ../sass/_animations.scss */
+  100% {
+    right: 100%;
+  }
+}
+
+@-moz-keyframes skysphere {
+  /* line 7, ../sass/_animations.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 8, ../sass/_animations.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes skysphere {
+  /* line 7, ../sass/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 8, ../sass/_animations.scss */
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes skysphere {
+  /* line 7, ../sass/_animations.scss */
+  0% {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 8, ../sass/_animations.scss */
+  100% {
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes skysphere {
+  /* line 7, ../sass/_animations.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 8, ../sass/_animations.scss */
+  100% {
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes skysphere {
+  /* line 7, ../sass/_animations.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 8, ../sass/_animations.scss */
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes scroll {
+  /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position: 0 0;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position: -50px -50px;
+  }
+}
+
+@-webkit-keyframes scroll {
+  /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position: 0 0;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position: -50px -50px;
+  }
+}
+
+@-o-keyframes scroll {
+  /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position: 0 0;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position: -50px -50px;
+  }
+}
+
+@-ms-keyframes scroll {
+  /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position: 0 0;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position: -50px -50px;
+  }
+}
+
+@keyframes scroll {
+  /* line 12, ../sass/_animations.scss */
+  0% {
+    background-position: 0 0;
+  }
+
+  /* line 13, ../sass/_animations.scss */
+  100% {
+    background-position: -50px -50px;
+  }
+}
+
+@-moz-keyframes jump {
+  /* line 17, ../sass/_animations.scss */
+  0% {
+    bottom: 100px;
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 21, ../sass/_animations.scss */
+  50% {
+    bottom: 400px;
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* line 25, ../sass/_animations.scss */
+  100% {
+    bottom: 100px;
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes jump {
+  /* line 17, ../sass/_animations.scss */
+  0% {
+    bottom: 100px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 21, ../sass/_animations.scss */
+  50% {
+    bottom: 400px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* line 25, ../sass/_animations.scss */
+  100% {
+    bottom: 100px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@-o-keyframes jump {
+  /* line 17, ../sass/_animations.scss */
+  0% {
+    bottom: 100px;
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 21, ../sass/_animations.scss */
+  50% {
+    bottom: 400px;
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* line 25, ../sass/_animations.scss */
+  100% {
+    bottom: 100px;
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@-ms-keyframes jump {
+  /* line 17, ../sass/_animations.scss */
+  0% {
+    bottom: 100px;
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 21, ../sass/_animations.scss */
+  50% {
+    bottom: 400px;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* line 25, ../sass/_animations.scss */
+  100% {
+    bottom: 100px;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes jump {
+  /* line 17, ../sass/_animations.scss */
+  0% {
+    bottom: 100px;
+    transform: rotate(0deg);
+  }
+
+  /* line 21, ../sass/_animations.scss */
+  50% {
+    bottom: 400px;
+    transform: rotate(45deg);
+  }
+
+  /* line 25, ../sass/_animations.scss */
+  100% {
+    bottom: 100px;
+    transform: rotate(90deg);
+  }
+}
