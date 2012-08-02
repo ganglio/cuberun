@@ -1,0 +1,30 @@
+@include keyframes(clouds) {
+	0% {right: -10%;}
+	100% {right: 100%;}
+}
+
+@include keyframes(skysphere) {
+	0% {@include transform(rotate(0deg));}
+	100% {@include transform(rotate(359deg));}
+}
+
+
+@include keyframes(scroll) {
+	0% {background-position:0 0;}
+	100% {background-position:-50px -50px;}
+}
+
+@include keyframes(jump) {
+	0% {
+		bottom: $groundSize;
+		@include transform(rotate(0deg));
+	}
+	50% {
+		bottom: $groundSize+$boxJumpHeight;
+		@include transform(rotate(45deg));
+	}
+	100% {
+		bottom: $groundSize;
+		@include transform(rotate(90deg));
+	}
+}

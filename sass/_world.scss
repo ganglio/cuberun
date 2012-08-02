@@ -3,13 +3,61 @@ $boxColor: #0080FF;
 $boxJumpHeight: 300px;
 $groundSize: 100px;
 $groundColor: #FF892D;
-$skyColor: #B3FFFD;
+$skyColor: #81A9FF;
 $jumpTime: 0.5s;
 $scrollTime: 0.4s;
+$cloudColor: #808080;
+$cloudsTime: 8s;
+$cloudsJitter: 0.5s;
+$maxCloudWidth: 300px;
+$dayTime: 60s;
+
+html {
+	height: 100%;
+}
 
 body {
-	@include background-image(linear-gradient(top,$skyColor,white))
+	@include background-image(linear-gradient(top,$skyColor,white));
+	height: 100%;
+	overflow: hidden;
+	@include animation(daynight $daytime infinite linear);
+}
+
+.clouds {
+	position: absolute;
+	background-color: white;
+	@include border-radius(10px);
+	@include box-shadow(0 0 30px $cloudColor inset, 3px 3px 3px $cloudColor);
+	@for $i from 1 through 10 {
+		&.cloud-#{$i} {
+			@include animation(clouds $cloudsTime+$cloudsJitter*$i infinite linear);
+		}
 	}
+}
+
+.skysphere {
+	position: relative;
+	width: 100%;
+	height: 200%;
+	@include animation(skysphere $dayTime infinite linear);
+	@include transform(rotate(0deg));
+	.skyelement {
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		left: 50%;
+		margin-left: -100px;
+		@include border-radius(100px);
+		&.sun {
+			top:0;
+			background-color: yellow;
+		}
+		&.moon {
+			background-color: green;
+			bottom: 0;
+		}
+	}
+}
 
 .box {
 	width: $boxSize;
@@ -33,37 +81,8 @@ body {
 	bottom: 0;
 	@include background-image(
 		linear-gradient(-45deg,transparent 25%,rgba(255,255,255,0.2) 25%,rgba(255,255,255,0.2) 50%,transparent 50%,transparent 75%,rgba(255,255,255,0.2) 75%,rgba(255,255,255,0.2)),
-		linear-gradient(top, $groundColor, transparent)
+		linear-gradient(top, $groundColor, white)
 	);
 	@include background-size(50px 50px, $groundSize $groundSize);
 	@include animation(scroll $scrollTime infinite linear);
-}
-
-@include keyframes(scroll) {
-	0% {background-position:0 0;}
-	100% {background-position:-50px -50px;}
-}
-
-@include keyframes(jump) {
-	0% {
-		bottom: $groundSize;
-		@include transform(rotate(0deg));
-	}
-	50% {
-		bottom: $groundSize+$boxJumpHeight;
-		@include transform(rotate(45deg));
-	}
-	100% {
-		bottom: $groundSize;
-		@include transform(rotate(90deg));
-	}
-}
-
-// UI
-#jump {
-	position: absolute;
-	top:0;
-	right: 0;
-	width: 200px;
-	height: 50px;
 }
